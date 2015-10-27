@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>Peak Performance Acupuncture</title>
-	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
-	<link rel="stylesheet" type="text/css" href="CSS/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<script src="javascript_jQuery/jquery-2.1.4.js"></script>
+	<script src="javascript_jQuery/mylibrary.js"></script>
 </head>
 
 <body>
@@ -22,24 +24,41 @@
 			</div>
 			
 			<div class="maincontent">
-				<p class="imageText">" Text on top of the image sliders.... "</p>
+				<div class="fadein">
+					<img src="images/obj.jpg"/>
+					<img src="images/victor-cruz.jpg"/>
+					<img src="images/melo.jpg"/>
+					<img src="images/derrickrose.jpg"/>
+					<img src="images/kobe.jpg"/>
+					<img src="images/dwyane-wade.jpg"/>
+
+				</div>
 			</div>
 		
 			<div id="footer">	
-
-				<div id="first">
-					<h2>IMAGE 1</h2>
-					<p></p>
-				</div>
-		
-				<div id="second">
-					<h2>IMAGE 2</h2>
-					<p></p>
+				<div class="img-container">
+					<div id="first">
+						<img src="images/pain-relief.jpg">
+						<h2>Pain Relief</h2>
+						<p></p>
+					</div>
 				</div>
 
-				<div id="third">
-					<h2>IMAGE 3</h2>
-					<p></p>
+				<div class="img-container">
+					<div id="second">
+						<img src="images/acupuncture.jpg"/>
+						<h2>Acupuncture</h2>
+						<p></p>
+					</div>
+				</div>
+
+				<div class="img-container">
+					<div id="third">
+						<img src="images/stress-relief.jpg">
+						<h2>Stress Relief</h2>
+						
+						<p></p>
+					</div>
 				</div>
 		</div>
 				<div class="address"><p>our address and links back to top will go in this div</p>
