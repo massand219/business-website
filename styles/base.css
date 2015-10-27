@@ -28,6 +28,7 @@ h2 {
     font-size: 18px;
     height: 100px;
     color: white;
+    font-family: "Impact";
     padding:15px;
     position: fixed 0;
     width: 100%;
@@ -57,7 +58,28 @@ h2 {
 	height: 500px;
 	color: white;
     border-bottom: 10px solid #9bb484;
+    padding-top: 32px;
+    
 }
+
+.fadein {
+	position: relative;
+	width: 500px;
+	height: 332px;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.fadein img {
+	position: absolute;
+	left: 55%;
+	top: 0;
+}
+
+.fadein.fadeOut {
+	opacity: 0;
+}
+
 .imageText {
 	padding: 200px;
 	text-align: center;
@@ -97,49 +119,66 @@ nav ul li a:active  {color:yellow; background-color:transparent; text-decoration
     font-size: 18px;
     height: 300px;
     color: white;
+    font-family: "Impact";
     padding:15px;
     position: fixed 0;
     width: 100%;
 }
 
-.socialIcon{
+.socialIcon {
 	width: 50px;
 	display: inline-block;
-	padding: 5px 15px;
+	padding: 5px 0px;
 	float: left;
 	overflow: auto;
 
 }
 
+
 #first {
-	width: 25%;
+	width: 23.8%;
 	height: 280px;
 	float: left;
 	padding: 10px 55px;
-	background-color: white;
+	background-color: #3cb2a8;
 	color: white;
+}
+
+#first img {
 	border-radius: 12px;
 }
 
+#first h2, #second h2, #third h2 {
+	color: white;
+	font-family: "Impact";
+	size: 12px;
+}
+
 #second {
-	width: 25%;
+	width: 23.8%;
 	height: 280px;
 	float: left;
 	padding: 10px 55px;
 	margin: 0px 5px 5px 5px;
-	background-color: white;
-	border-radius: 12px;
+	background-color: #3cb2a8;
 
 }
 
+#second img {
+	border-radius: 12px;
+}
+
 #third {
-	width: 25%;
+	width: 23.8%;
 	height: 280px;
 	padding: 10px 55px;
 	float: left;
-	background-color: white;
-	border-radius: 12px;
+	background-color: #3cb2a8;
 
+}
+
+#third img {
+	border-radius: 12px;
 }
 
 .address {
