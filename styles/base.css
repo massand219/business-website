@@ -16,6 +16,7 @@ body {
 	clear: both;
 }
 */
+
 .container{
 	margin: 0 auto;
 	overflow: auto;
@@ -149,11 +150,10 @@ nav ul li a:hover   {color:black; background-color:white; text-decoration:none;p
 
 #first h2, #second h2, #third h2 {
 	color: white;
-	font-family: "Hoefler";
-	size: 12px;
-	text-align: left;
+	font-family: "Verdana";
+	font-size: 15px;
 	padding-top: 10px;
-	margin-left: 100px;
+	text-align: center;
 }
 
 
