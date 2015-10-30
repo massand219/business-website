@@ -9,97 +9,13 @@
 
 	<style type="text/css">
 
-		#header { 
-	    background-color: #3cb2a8;
-	    font-size: 18px;
-	    height: 100px;
-	    color: white;
-	    font-family: "Impact";
-	    padding:15px;
-	    position: fixed 0;
-	    width: 100%;
-	    z-index: 2;
-	    border-bottom: 12px solid #9bb484;
-		}
-
-		.logo {
-	    width: 200px;
-	    padding: 5px ;
-	    display: inline-block;
-	    float: left;
-	    border-radius: 20px;
-		}
-		.logotype {
-			font-size: 27px;
-			text-align: left;
-			padding-top: 50px;
-			font-family: "font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif";
-			letter-spacing: 1px;
-			font-weight: bold;
-		}
-
-		nav ul {
-			display:inline-block;
-			font-size: 20px;
-			margin-right: 20px;
-			float: right;
-			padding: 5px 40px;
-
-		}
-
-		nav ul li {
-			display:inline-block;
-			margin: 0px 30px;
-			padding: 12px 30px;
-			border-radius: 5px;
-			background-color: #9bb484 ;
-			font-size: 15px;
-
-		}
-
-		nav ul li a:link {color:white; background-color:transparent; text-decoration:none;}
-		nav ul li a:visited {color:white; background-color:transparent; text-decoration:none;}
-		nav ul li a:hover   {color:black; background-color:white; text-decoration:none;padding: 10px 10px; border-radius: 3px;}
-		nav ul li a:active  {color:yellow; background-color:transparent; text-decoration:underline;padding: 20px;}
-
-		.maincontent {
+		.maincontent-services {
 			width: 1000px;
+			background-color: white;
 			margin: 0 auto;
-
-		}
-		#footer {
-	    background-color: #3cb2a8;
-	    font-size: 18px;
-	    height: 300px;
-	    color: white;
-	    font-family: "Impact";
-	    padding:15px;
-	    position: fixed 0;
-	    width: 100%;
 		}
 
-		.socialIcon {
-			width: 50px;
-			display: inline-block;
-			padding: 5px 0px;
-			float: left;
-			overflow: auto;
-
-		}
-
-		.address {
-			width: 100%;
-			height: 100px;
-			background-color: #9bb484;
-			text-align: center;
-			color: white;
-			padding: 30px;
-			font-size: 25px;
-	    border-top: 5px solid black;
-	    border-bottom: 12px solid black;
-		}
-
-		h1 {
+		.services {
 			font-size: 40px;
 			font-weight: bold;
 			padding: 20px;
@@ -183,16 +99,16 @@
 			<a href="index.html"><img class="logo" src="images/peak.svg" alt="Peak Performance Acupuncture"></a>
 				<nav>
 						<ul>
-							<li><a href="">HOME</a></li>
-							<li><a href="">ABOUT</a></li>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="about.html">ABOUT</a></li>
 							<li><a href="services.html">SERVICES</a></li>
 							<li><a href="business.html">CONTACT</a></li>
 						</ul>
 				</nav>
 		</div>
 			
-		<div class="maincontent">
-			<h1>Main Services</h1>
+		<div class="maincontent-services">
+			<h1 class="services">Main Services</h1>
 
 			<div class="description">
 				<div class="header">
@@ -293,13 +209,47 @@
 		</div>
 
 		<div class="clear"></div>
-		<div id="footer">	
-			
+		<div class="address">
+
+			<div class="left">SPORTS/PETS
+				<p class="columntext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
 		
-			<div class="address"><p>our address and links back to top will go in this div</p>
-							<a href="https://www.facebook.com" target="_blank">
-			<img class="socialIcon" src="images/Facebook.png" alt="Facebook Icon"></a>
-			<a href="https://twitter.com" target="_blank"><img class="socialIcon" src="images/twitter-icon.png" alt="Twitter Icon"></a></div>
+			<div class="middle">ACUPUNCTURE
+				<p class="columntext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<!-- Email form below-->			
+ 				<div class="right"><a href="">Contact Us Today</a>
+				<p class="columntext">If you need more information on our services or would like to speak with us, please register below!</p>
+				<div id="form">
+					<label for="name" class="title">Name:</label>
+					<input type="text" id="name" name="name"></div>
+
+				<div id="form">
+					<label for="email" class="title">Email:</label>
+					<input type="email" id="email" name="email"></div>
+
+				<div class="submit">
+					<input type="submit" value="Register" id="submit" />
+					</div>
+
+
+
+				<p class="columntext"></p>
+				<a href="https://www.facebook.com" target="_blank">
+				<img class="socialIcon" src="images/f_icon.svg" alt="Facebook"></a>
+				<a href="https://twitter.com" target="_blank"><img class="socialIcon" src="images/twitter_icon.svg" alt="Twitter"></a>
+				<a href="https://linkedin.com" target="_blank"><img class="socialIcon" src="images/linked_icon.svg" alt="Linked In"></a>
+				<a href="https://pinterest.com" target="_blank"><img class="socialIcon" src="images/pinterest_icon.svg" alt="Pinterest"></a>
+			</div>
 		</div>
 
 </div>
