@@ -15,6 +15,116 @@
 			margin: 0 auto;
 		}
 
+		#header { 
+		    background-color: #3cb2a8;
+				height: 90px;
+		    color: white;
+		    padding: 15px;
+		    position: fixed;
+		    width: 100%;
+		    z-index: 2;
+		    border-bottom: 10px solid #9bb484;
+		}
+
+		.logo {
+		    width: 300px;
+		    display: inline-block;
+		    float: left;
+		    padding-left: 105px;
+		    margin: -55px;
+		}
+
+		nav {
+			margin-top: 70px;
+		}
+
+		nav ul {
+			display:inline-block;
+			margin-right: 180px;
+			float: right;
+		/*	padding: 0px 30px;
+		*/
+		}
+
+		nav ul li {
+			display:inline-block;
+		/*	margin: 0px;
+		*/	padding: 15px 30px;
+			border-radius: 5px;
+			background-color: #9bb484;
+			font-size: 15px;
+
+		}
+
+		nav ul li a:link {color:black; background-color:transparent; text-decoration:none;}
+		nav ul li a:visited {color:white; background-color:transparent; text-decoration:none;}
+		nav ul li a:hover   {color:black; background-color:white; text-decoration:none;padding: 10px 10px; border-radius: 3px;}
+		nav ul li a:active  {color:yellow; background-color:transparent; text-decoration:underline;padding: 20px;}
+
+		.socialIcon {
+			width: 50px;
+			display: inline-block;
+			padding: 5px 0px;
+			float: left;
+			overflow: auto;
+		}
+
+		.address {
+			width: 100%;
+			height: 200px;
+			background-color: #9bb484;
+			color: white;
+			padding: 50px;
+			font-size: 20px;
+		  border-top: 5px solid black;
+		  font-family: "Impact"
+		}	
+
+
+			.left {
+				width: 23.8%;
+				height: 280px;
+				float: left;
+				padding: 10px 55px;
+				color: black;
+				margin: 0 auto;
+			}
+
+			.middle {
+				width: 23.8%;
+				height: 280px;
+				float: left;
+				padding: 10px 55px;
+				margin: 0px 5px 5px 5px;
+				color: black;
+				margin: 0 auto;
+			}
+
+			.right {
+				width: 23.8%;
+				height: 280px;
+				padding: 10px 55px;
+				float: left;
+				color: black;
+				margin: 0 auto;
+			}
+
+
+			.columntext {
+				font-size: 12px;
+				font-family: "Arial";
+				padding: 15px 0;
+				margin: 0 auto;
+			}
+
+			.other-services {
+				font-weight: bold;
+				font-family: "Hoefler";
+				margin-left: 30px;
+			}
+
+
+
 		.services {
 			font-size: 40px;
 			font-weight: bold;
@@ -24,7 +134,7 @@
 		}
 
 		.header {
-			height: 200px;
+			height: 250px;
 			overflow: hidden;
 			margin: 20px;
 			box-sizing: border-box;
@@ -33,6 +143,8 @@
 		.header-image {
 			width: 100%;
 			margin-top: -135px;
+			padding-top: 50px;
+
 		}
 
 		.sport-header-image {
@@ -43,18 +155,21 @@
 		.description {
 			width: 978px;
 			margin: 10px auto;
-			padding: 15px;
+			padding: 15px 0 20px;
 			border-bottom: 2px solid black;
 		}
 
 		.title {
 			font-size: 25px;
 			font-weight: bold;
+			margin-left: 30px;
+
 		}
 
-		p {
+		.description p {
 			line-height: 25px;
 			padding: 5px 0;
+			margin-left: 30px;
 
 		}
 
@@ -66,28 +181,6 @@
 			margin: 5px;
 		}
 
-		.clear {
-			clear: both;
-		}
-
-		.other-services {
-
-			padding: 15px
-
-		}
-
-		.bold {
-			font-weight: bold;
-		}
-
-		h2 {
-
-			font-size: 17px;
-			font-weight: 800;
-
-		}
-
-
 
 	</style>
 </head>
@@ -97,14 +190,14 @@
 	<div id="top"></div>
 		<div id="header">
 			<a href="index.html"><img class="logo" src="images/peak.svg" alt="Peak Performance Acupuncture"></a>
-				<nav>
-						<ul>
-							<li><a href="index.html">HOME</a></li>
-							<li><a href="about.html">ABOUT</a></li>
-							<li><a href="services.html">SERVICES</a></li>
-							<li><a href="business.html">CONTACT</a></li>
-						</ul>
-				</nav>
+			<nav>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="services.html">SERVICES</a></li>
+						<li><a href="business.html">CONTACT</a></li>
+					</ul>
+			</nav>
 		</div>
 			
 		<div class="maincontent-services">
@@ -190,25 +283,23 @@
 			
 
 			<div class="other-services">
-				<h2>Acupuncture Treatment Can Heal and Prevent the Following Common Disorders:</h2>
-
-				<p> <span class="bold">Muscular and Skeletal Disorders:</span>
-						Acupuncture for arthritis, TMJ, tennis elbow, frozen shoulder, neck pain, knee pain,  sciatica, low back pain, fibromyalgia, Carpal Tunnel Syndrome</p>
-				<p> <span class="bold">Gynecological Disorders:</span>
-						Acupuncture for fertility, menstrual irregularity, endometriosis, PMS, menstrual cramps, menopause, urinary tract infections, yeast infections.  Irregular or painful periods, PMS, fibroids, PCOS can all benefit from acupuncture, herbal medicine and lifestyle changes.  We have also had great success turning breech babies and treating placenta previa and postpartum depression. </p>
-				<p> <span class="bold">Digestive Disorders:</span>
-						Acupuncture for IBS, indigestion, nausea, constipation, diarrhea, colitis, Crohn’s Disease and ulcers.</p>
-				<p> <span class="bold">Respiratory Disorders:</span>
-						Acupuncture for allergies, colds and flu, bronchitis, asthma, emphysemaCirculatory Disorders: acupuncture for hypertension, arteriosclerosis andangina pectoris.</p>
-				<p> <span class="bold">Emotional and Neurological Disorders:</span>
-						Acupuncture for anxiety, stress, headache, depression,  migraine, MS, chronic fatigue syndrome, dizziness, insomnia and addiction. </p>
-				<a href="#top" class="btt">Back to top ^</a>
+				More Services:
 
 			</div>
 			
 		</div>
 
 		<div class="clear"></div>
+		<div class="address">
+
+			<div class="left">SPORTS/PETS
+				<p class="columntext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		
 		<div class="address">
 
 			<div class="left">SPORTS/PETS
@@ -250,6 +341,7 @@
 				<a href="https://linkedin.com" target="_blank"><img class="socialIcon" src="images/linked_icon.svg" alt="Linked In"></a>
 				<a href="https://pinterest.com" target="_blank"><img class="socialIcon" src="images/pinterest_icon.svg" alt="Pinterest"></a>
 			</div>
+
 		</div>
 
 </div>
