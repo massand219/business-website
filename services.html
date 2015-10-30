@@ -3,140 +3,19 @@
 <head>
 	<title>Peak Performance Acupuncture</title>
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
-	<!-- <link rel="stylesheet" type="text/css" href="styles/base.css"> -->
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
 	<script src="javascript_jQuery/jquery-2.1.4.js"></script>
 	<script src="javascript_jQuery/mylibrary.js"></script>
 
 	<style type="text/css">
 
-		#header { 
-		    background-color: #3cb2a8;
-				height: 90px;
-		    color: white;
-		    padding: 15px;
-		    position: fixed;
-		    width: 100%;
-		    z-index: 2;
-		    border-bottom: 10px solid #9bb484;
+		.maincontent-services {
+			width: 1000px;
+			background-color: white;
+			margin: 120px auto;
 		}
 
-		.logo {
-		    width: 300px;
-		    display: inline-block;
-		    float: left;
-		    padding-left: 105px;
-		    margin: -55px;
-		}
-
-		nav {
-			margin-top: 70px;
-		}
-
-		nav ul {
-			display:inline-block;
-			margin-right: 180px;
-			float: right;
-		/*	padding: 0px 30px;
-		*/
-		}
-
-		nav ul li {
-			display:inline-block;
-		/*	margin: 0px;
-		*/	padding: 15px 30px;
-			border-radius: 5px;
-			background-color: #9bb484;
-			font-size: 15px;
-
-		}
-
-		nav ul li a:link {color:black; background-color:transparent; text-decoration:none;}
-		nav ul li a:visited {color:white; background-color:transparent; text-decoration:none;}
-		nav ul li a:hover   {color:black; background-color:white; text-decoration:none;padding: 10px 10px; border-radius: 3px;}
-		nav ul li a:active  {color:yellow; background-color:transparent; text-decoration:underline;padding: 20px;}
-
-/*		#footer {
-	    background-color: #3cb2a8;
-	    font-size: 18px;
-	    height: 300px;
-	    color: white;
-	    font-family: "Impact";
-	    padding:15px;
-	    position: fixed 0;
-	    width: 100%;
-		}
-*/
-
-		.socialIcon {
-			width: 50px;
-			display: inline-block;
-			padding: 5px 0px;
-			float: left;
-			overflow: auto;
-		}
-
-		.address {
-			width: 100%;
-			height: 200px;
-			background-color: #9bb484;
-			color: white;
-			padding: 50px;
-			font-size: 20px;
-		  border-top: 5px solid black;
-		  font-family: "Impact"
-		}	
-
-
-			.left {
-				width: 23.8%;
-				height: 280px;
-				float: left;
-				padding: 10px 55px;
-				color: black;
-				margin: 0 auto;
-			}
-
-			.middle {
-				width: 23.8%;
-				height: 280px;
-				float: left;
-				padding: 10px 55px;
-				margin: 0px 5px 5px 5px;
-				color: black;
-				margin: 0 auto;
-			}
-
-			.right {
-				width: 23.8%;
-				height: 280px;
-				padding: 10px 55px;
-				float: left;
-				color: black;
-				margin: 0 auto;
-			}
-
-
-			.columntext {
-				font-size: 12px;
-				font-family: "Arial";
-				padding: 15px 0;
-				margin: 0 auto;
-			}
-
-			.other-services {
-				font-weight: bold;
-				font-family: "Hoefler"
-				margin-left: 30px;
-			}
-
-
-
-
-
-
-
-
-		h1 {
+		.services {
 			font-size: 40px;
 			font-weight: bold;
 			padding: 20px;
@@ -170,11 +49,10 @@
 			border-bottom: 2px solid black;
 		}
 
-		.title {
+		.title-services{
 			font-size: 25px;
 			font-weight: bold;
 			margin-left: 30px;
-
 		}
 
 		.description p {
@@ -210,15 +88,17 @@
 					</ul>
 			</nav>
 		</div>
+
+		<div class="clear"></div>
 			
-		<div class="maincontent">
-			<h1>Main Services</h1>
+		<div class="maincontent-services">
+			<h1 class="services">Main Services</h1>
 
 			<div class="description">
 				<div class="header">
 					<img class="header-image" id="afp" src="images/dog1.jpg">
 				</div>
-				<h2 class="title">Pet Accupuncture</h2>
+				<h2 class="title-services">Pet Accupuncture</h2>
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -244,7 +124,7 @@
 				<div class="header">
 					<img class="sport-header-image" id="afs" src="images/athlete1.jpg">
 				</div>
-				<h2 class="title">Sport Accupuncture</h2>
+				<h2 class="title-services">Sport Accupuncture</h2>
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -270,7 +150,7 @@
 				<div class="header">
 					<img class="header-image" id="cupping" src="images/cupping1.jpg">
 				</div>
-				<h2 class="title">Cupping</h2>
+				<h2 class="title-services">Cupping</h2>
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -290,19 +170,10 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<div class="btt"><a href="#top">Back to top ^</a></div>
-			</div>
-			
-
-			<div class="other-services">
-				More Services:
-
-			</div>
-			
+			</div>			
 		</div>
 
 		<div class="clear"></div>
-		<div id="footer">	
-			
 		
 		<div class="address">
 
@@ -345,7 +216,7 @@
 				<a href="https://linkedin.com" target="_blank"><img class="socialIcon" src="images/linked_icon.svg" alt="Linked In"></a>
 				<a href="https://pinterest.com" target="_blank"><img class="socialIcon" src="images/pinterest_icon.svg" alt="Pinterest"></a>
 			</div>
-		</div>
+
 		</div>
 
 </div>
