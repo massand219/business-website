@@ -42,16 +42,7 @@ body {
     padding-left: 105px;
     margin: -55px;
 }
-/*.logotype {
-	font-size: 27px;
-	text-align: left;
-	margin-top: 40px;
-	padding-top: 200px 0px;
-	font-family: "font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif";
-	letter-spacing: 1px;
-	font-weight: bold;
-}
-*/
+
 .maincontent {
 	width: 100%;
 	background-color: black;
@@ -59,34 +50,31 @@ body {
 	color: white;
     border-bottom: 10px solid #9bb484;
 }
-/*
-.image-1 {
+.maincontentAbout {
 	width: 100%;
-	height: 100%;
-	background-image: url("../images/obj.jpg");
-	background-size: cover;
+	background-color: white;
+	height: 600px;
+	color: white;
+
+}
+.aboutheader {
+	margin-left: 40px; 
+	padding-top: 150px;
+	color: black;
+	font-family: "Impact";
+	font-size: 35px;
 }
 
+.abouttext {
+	margin-left: 40px; 
+	padding-top: 20px;
+	line-height: 18px;
+	color: black;
+	font-family: "Hoefler";
+	font-size: 15px;
 
-
-.fadein {
-	position: relative;
-	width: 500px;
-	height: 332px;
-    opacity: 1;
-    transition: opacity 1s;
 }
 
-.fadein img {
-	position: absolute;
-	left: 55%;
-	top: 0;
-}
-
-.fadein.fadeOut {
-	opacity: 0;
-}
-*/
 .imageText {
 	padding: 200px;
 	text-align: center;
@@ -297,7 +285,5 @@ h3 {
 .imgright {
 	text-align: right;
 }
-
-
 
 

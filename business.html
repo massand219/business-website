@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Peak Performance Acupuncture</title>
-    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+
+<head>
+	<title>Peak Performance Acupuncture</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/carousel.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/business.css">
     <script src="javascript_jQuery/jquery-2.1.4.js"></script>
     <script src="javascript_jQuery/mylibrary.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/business.css">
 
-    <script>
-        function initialize()
-        {
-        var mapProp = {
-        center: new google.maps.LatLng(40.7079961,-74.0087744,17),
-        zoom:17,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        }
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
 
-        function loadScript()
-        {
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
-        document.body.appendChild(script);
-        }
+	<script>
+  function initialize()
+  {
+  var mapProp = {
+    center: new google.maps.LatLng(40.7079961,-74.0087744,17),
+    zoom:17,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
 
-        window.onload = loadScript;
+  function loadScript()
+  {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+  document.body.appendChild(script);
+  }
 
-        function myFunction() {
+  window.onload = loadScript;
+
+  function myFunction() {
           alert("Thanks for submitting!");
         }
 
-     </script>
-
-  </head>
+  </script>
+  
+</head>
 
 <body>
-
-
 
   <div class="container">
 
