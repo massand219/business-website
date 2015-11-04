@@ -1,102 +1,190 @@
-<!DOCTYPE.html>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Peak Performance Acupuncture</title>
+  <head>
+    <title>Peak Performance Acupuncture</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/business.css">
+    <script src="javascript_jQuery/jquery-2.1.4.js"></script>
+    <script src="javascript_jQuery/mylibrary.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="styles/business.css">
+    <script>
+        function initialize()
+        {
+        var mapProp = {
+        center: new google.maps.LatLng(40.7079961,-74.0087744,17),
+        zoom:17,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
 
-	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
- 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	
+        function loadScript()
+        {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+        document.body.appendChild(script);
+        }
 
-	<script>
-  function initialize()
-  {
-  var mapProp = {
-    center: new google.maps.LatLng(40.7079961,-74.0087744,17),
-    zoom:17,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  }
+        window.onload = loadScript;
 
-  function loadScript()
-  {
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
-  document.body.appendChild(script);
-  }
+        function myFunction() {
+          alert("Thanks for submitting!");
+        }
 
-  window.onload = loadScript;
+     </script>
 
-  </script>
-  
-</head>
+  </head>
+
 <body>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/q4AQDDKglEE?list=PLuaZRqnBYUg5dp3a3l0S7jS20z2Bp7csv?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+
+  <div class="container">
+
+    <div id="header">
+      <a href="index.html"><img class="logo" src="images/peak.svg" alt="Peak Performance Acupuncture"></a>
+        <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="services.html">SERVICES</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
   
- 
-
-  <h1>We are located in the Financial District.</h1>
-
-  <h3>We are conveniently located in downtown Manhatten a short walk from the Freedom tower, Brooklyn bridge, and Fulton station, and the A, C, E line.</h3>
-
-  <div id="googleMap" style="width:500px;height:500px;"></div>
-
-  
-  <h3>Pay us a vist at:</h3>
-  
-  <h3>90 John St New York, NY 10038</h3>
-
-  <h3>Monday-Friday</h3>
-  
-  <h3>9AM-5PM</h3>
-
-  <h3>Or call us at: 555-655-5599</h3>
-
-
-  <div class="wrapper-inner-tab-title"></div>
-
-  <div class="wrapper-inner-tab-backgrounds">
-
-  <div class="wrapper-inner-tab-backgrounds-first"><div class="sim-button button10"></div></div>
-
-  <div class="wrapper-inner-tab-backgrounds-second"><div class="sim-button button10"></div></div>
-
-  <div class="wrapper-inner-tab-backgrounds-third"><div class="sim-button button10"></div></div>
-
-  </div>
-
+  <div id="googleMap" style="width:500px;height:500px; margin:60px 20px;"></div>
+      <h3>Pay us a vist at:</h3>
+      <h3>90 John St</h3>
+      <h3>New York, NY 10038</h3>
+      <h3>Monday-Friday</h3>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/q4AQDDKglEE?list=PLuaZRqnBYUg5dp3a3l0S7jS20z2Bp7csv?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+      <h3>9AM-5PM</h3> 
+      <h3>Or call us at: 555-655-5599</h3>
+        <br>
   <div class="contact"><h2>Contact Us</h2></div>
 
-  <div class="block">
-  
-  <div class="name"><input type="text" id="txtSearch" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()"/>
-
-  <input type="button" id="btnSearch" value="Name" onclick="doSomething();" /></div>
-
-  <div class="email"><input type="text" id="txtSearch" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()"/>
-
-  <input type="button" id="btnSearch" value="E-mail" onclick="doSomething();" /></div>
-
-  <div class="number"><input type="text" id="txtSearch" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()"/>
-
-  <input type="button" id="btnSearch" value="Contact Number" onclick="doSomething();" /></div>
-
-  <div class="message"><input type="text" id="txtSearch" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()"/>
-
-  <input type="button" id="btnSearch" value="Message" onclick="doSomething();" /></div>
-
+ <form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputName3" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="name" class="form-control" id="inputName3" placeholder="Name">
+    </div>
   </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">E-mail</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputNumber3" class="col-sm-2 control-label">Number</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="inputNumber3" placeholder="Number">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputMessage3" class="col-sm-2 control-label">Message</label>
+    <div class="col-sm-10">
+      <input type="message" class="form-control" id="inputMessage3" placeholder="Message">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+     </div>
+    </div>
+  </div>
+  
+
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button onclick="myFunction()">Submit</button>
+    </div>
+  </div>
+</form>
 
   <br>
 
-  <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square fa-4x"></i></a>
+  <div id="footer"> 
+      <div class="img-container">
+          <div id="first">
+            <a href="services.html#afp" target="_blank"><img src="images/afp.jpg"></a>
+            <h2>Acupuncture for Pets</h2>
+            <p></p>
+          </div>
+        </div>
 
-  <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
+        <div class="img-container">
+          <div id="second">
+            <a href="services.html#afs" target="_blank"><img src="images/acupuncture.jpg"/></a>
+            <h2>Acupuncture For Sports</h2>
+            <p></p>
+          </div>
+        </div>
 
+        <div class="img-container">
+          <div id="third">
+            <a href="services.html#cupping" target="_blank"><img src="images/cupping.jpg"></a>
+            <h2>Cupping</h2>
+            <p></p>
+          </div>
+        </div>
+    
+    </div>
+        
+
+    <div class="address">
+
+      <div class="left">SPORTS/PETS
+        <p class="columntext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    
+      <div class="middle">ACUPUNCTURE
+        <p class="columntext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!-- Email form below-->      
+        <div class="right"><a href="">Contact Us Today</a>
+        <p class="columntext">If you need more information on our services or would like to speak with us, please register below!</p>
+        <div id="form">
+          <label for="name" class="title">Name:</label>
+          <input type="text" id="name" name="name"></div>
+
+        <div id="form">
+          <label for="email" class="title">Email:</label>
+          <input type="email" id="email" name="email"></div>
+
+        <div class="submit">
+          <input type="submit" value="Register" id="submit" />
+          </div>
+
+
+
+        <p class="columntext"></p>
+        <a href="https://www.facebook.com" target="_blank">
+        <img class="socialIcon" src="images/f_icon.svg" alt="Facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img class="socialIcon" src="images/twitter_icon.svg" alt="Twitter"></a>
+        <a href="https://linkedin.com" target="_blank"><img class="socialIcon" src="images/linked_icon.svg" alt="Linked In"></a>
+        <a href="https://pinterest.com" target="_blank"><img class="socialIcon" src="images/pinterest_icon.svg" alt="Pinterest"></a>
+      </div>
+    </div>
+
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="javascript_jQuery/mylibrary.js"></script>
 </body>
 </html>
